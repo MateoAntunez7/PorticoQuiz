@@ -128,6 +128,38 @@ const questions = [
     });
   }
   
+  function showResult() {
+    quizContainer.classList.add('d-none');
+    resultContainer.classList.remove('d-none');
+    
+    let resultMessage = '';
+    
+    if (score >= 5) {
+      resultMessage = '¡Eres un Jedi de la luz!';
+    } else {
+      resultMessage = 'Has sido tentado por el lado oscuro...';
+    }
+    
+    const resultText = document.createElement('p');
+    resultText.textContent = resultMessage;
+    resultContainer.appendChild(resultText);
+    
+    const sideOptions = document.createElement('p');
+    sideOptions.textContent = 'Opciones del lado de la luz:';
+    resultContainer.appendChild(sideOptions);
+    
+    const lightSideOptions = questions.filter((question) => {
+      return question.answers.some((answer) => answer.side === 'Luz');
+    });
+    
+    lightSideOptions.forEach((question) => {
+      const questionText = document.createElement('p');
+      questionText.textContent = question.question;
+      resultContainer.appendChild(questionText);
+    });
+  }
+  
+
   function calculateScore() {
     const selectedAnswer = document.querySelector('input[name="answer"]:checked');
     if (selectedAnswer) {
@@ -144,16 +176,17 @@ const questions = [
     resultText.textContent = (score >= 5) ? '¡Eres un Jedi!' : 'El lado oscuro te llama...';
   }
   
-  function handleNextBtnClick() {
-    calculateScore();
-    currentQuestionIndex++;
-  
-    if (currentQuestionIndex < questions.length) {
-      showQuestion();
-    } else {
-      showResult();
-    }
+function handleNextBtnClick() {
+  calculateScore();
+  currentQuestionIndex++;
+
+  if (currentQuestionIndex < questions.length) {
+    showQuestion();
+  } else {
+    showResult();
   }
+}
+
   
   nextBtn.addEventListener('click', handleNextBtnClick);
   
