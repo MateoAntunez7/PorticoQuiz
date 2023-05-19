@@ -1,5 +1,5 @@
 body {
-  background-image: url(/Images/fondo.png);
+  background-image: url(Images/fondo.png);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Star Jedi", Arial, sans-serif;
@@ -9,6 +9,7 @@ body {
   max-width: 600px;
   margin: 50px auto;
   text-align: center;
+  margin-top: 200px;
 }
 
 h1 {
