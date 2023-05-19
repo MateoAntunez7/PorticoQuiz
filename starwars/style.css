@@ -1,6 +1,8 @@
-body{
+body {
   background-image: url(/Images/fondo.png);
-  font-family: Arial, sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Star Jedi", Arial, sans-serif;
 }
 
 .container {
@@ -11,6 +13,8 @@ body{
 
 h1 {
   margin-bottom: 30px;
+  color: yellow;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #quiz-container {
@@ -18,12 +22,15 @@ h1 {
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  
 }
 
 #question-text {
   margin-bottom: 20px;
+  color: white;
 }
 
 #answers-container {
@@ -33,8 +40,86 @@ h1 {
 
 .btn-primary {
   margin-top: 10px;
+  background-color: #ffa500;
+  border-color: #ffa500;
+  font-family: "Star Jedi", Arial, sans-serif;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+.btn-primary:hover {
+  background-color: #ff8200;
+  border-color: #ff8200;
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+}
+
 
 #result-container {
   margin-top: 20px;
+  color: white;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
+
+
+/* Estilo personalizado para los radio buttons */
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  margin-right: 8px;
+}
+
+/* Estilo para cuando el radio button está seleccionado */
+input[type="radio"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffa500;
+}
+
+/* Estilo para el indicador del radio button */
+input[type="radio"]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+/* Estilo para cuando el radio button está seleccionado */
+input[type="radio"]:checked::before {
+  opacity: 1;
+  border-color: #ffa500;
+  box-shadow: 0 0 5px 2px #ffa500;
+}
+
+/* Estilo para cuando el radio button está deshabilitado */
+input[type="radio"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
