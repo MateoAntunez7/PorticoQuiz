@@ -4,12 +4,22 @@ body {
   background-size: cover;
   font-family: "Star Jedi", Arial, sans-serif;
 }
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background-image: url(Images/fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 
 .container {
   max-width: 600px;
   margin: 50px auto;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 250px;
 }
 
 h1 {
