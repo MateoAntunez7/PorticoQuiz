@@ -140,7 +140,7 @@ const questions = [
       window.location.href = '../LadoLuminoso.html';
     } else {
       resultMessage = 'Has sido tentado por el lado oscuro...';
-      window.location.href = '../LadoOscuro.html';
+      window.location.href = 'starwars/LadoOscuro.html';
     }
     
     
