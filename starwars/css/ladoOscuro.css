@@ -1,5 +1,5 @@
 #header {
-    background:url(../starwars/Images/ladooscuro.jpg); 
+    background:url(../Images/ladooscuro.jpg); 
     height: 500px;
   }
   
@@ -38,17 +38,5 @@
     text-align: center;
     padding: 10px;
   }
-  @font-face {
-    font-family: 'Lato';
-    src: url('../fonts/Lato-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Lato';
-    src: url('../fonts/Lato-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-  }
+
   

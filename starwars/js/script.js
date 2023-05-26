@@ -66,14 +66,7 @@ const questions = [
         { text: "Paz y estabilidad", side: "Luz" }
       ]
     },
-    {
-      question: "¿Cuál es el nombre del planeta de origen de Luke Skywalker?",
-      answers: [
-        { text: "Tatooine", side: "Luz" },
-        { text: "Coruscant", side: "Oscuridad" },
-        { text: "Coruscant", side: "Oscuridad" }
-      ]
-    },
+    
     {
       question: "¿Dónde tendrías la casa de tus sueños?",
       answers: [
@@ -140,7 +133,7 @@ const questions = [
       window.location.href = '../LadoLuminoso.html';
     } else {
       resultMessage = 'Has sido tentado por el lado oscuro...';
-      window.location.href = 'starwars/LadoOscuro.html';
+      window.location.href = '../LadoOscuro.html';
     }
     
     
