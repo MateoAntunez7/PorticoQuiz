@@ -50,14 +50,7 @@ const questions = [
 
       ]
     },
-    {
-      question: "¿A qué es lo que más aspiras en la vida?",
-      answers: [
-        { text: "Tatooine", side: "Luz" },
-        { text: "Coruscant", side: "Oscuridad" },
-        { text: "Coruscant", side: "Oscuridad" }
-      ]
-    },
+    
     {
       question: "¿Cuál es el nombre del planeta de origen de Luke Skywalker?",
       answers: [
@@ -130,10 +123,10 @@ const questions = [
     
     if (score >= 5) {
       resultMessage = '¡Eres un Jedi de la luz!';
-      window.location.href = '../LadoLuminoso.html';
+      window.location.href = '/LadoLuminoso.html';
     } else {
       resultMessage = 'Has sido tentado por el lado oscuro...';
-      window.location.href = '../LadoOscuro.html';
+      window.location.href = '/LadoOscuro.html';
     }
     
     
