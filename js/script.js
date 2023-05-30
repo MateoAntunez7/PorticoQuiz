@@ -123,10 +123,10 @@ const questions = [
     
     if (score >= 5) {
       resultMessage = '¡Eres un Jedi de la luz!';
-      window.location.href = '/LadoLuminoso.html';
+      window.location.href = '../../PorticoQuiz/LadoLuminoso.html';
     } else {
       resultMessage = 'Has sido tentado por el lado oscuro...';
-      window.location.href = '/LadoOscuro.html';
+      window.location.href = '../../PorticoQuiz/LadoOscuro.html';
     }
     
     
