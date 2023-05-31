@@ -39,4 +39,89 @@
     padding: 10px;
   }
 
+
+  #inicio {
   
+    float: right;
+    color: rgb(255, 255, 255);
+  }
+
+
+  /* Estilos para pantallas más pequeñas */
+@media (max-width: 767px) {
+  #header {
+      height: 300px;
+  }
+
+  .display-3 {
+      padding-top: 70px;
+      font-size: 30px;
+  }
+
+  .lead {
+      font-size: 16px;
+  }
+
+  #compañeros {
+      font-size: 40px;
+  }
+}
+
+.footer {
+  position: relative;
+}
+
+.footer-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(155, 0, 0);
+}
+
+.footer-image-left {
+  padding-left: 2%;
+  max-width: 15%; /* Ajusta el tamaño de la imagen izquierda según sea necesario */
+  height: auto;
+}
+
+.footer-image-center {
+  max-width: 12%; /* Ajusta el tamaño de la imagen centro según sea necesario */
+  height: auto;
+  margin-right: 30px;
+}
+
+.footer-image-right {
+  padding-right: 2%;
+  max-width: 8%; /* Ajusta el tamaño de la imagen derecha según sea necesario */
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+  }
+  
+  .footer-image-left{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+
+  }
+  .footer-image-center{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+
+
+  }
+  .footer-image-right {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+}
