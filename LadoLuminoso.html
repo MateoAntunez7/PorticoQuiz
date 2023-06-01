@@ -64,6 +64,20 @@
     </div>
 </section>
 
+
+<div class="container">
+    <h1 class="text-center m-5">Sé parte de portico</h1>
+    
+</div>
+<section id="convocatoria"  class="bg-primary text-center p-5 mt-4">
+    <div id="convocatoria2" class="container p-3">
+        <h3>Convocatoria</h3>
+        
+        <button type="button" class="btn btn-warning" id="ir-btn">Ir</button>
+        
+    </div>
+</section>
+
 <footer class="footer text-center">
     <div class="footer-container">
       <img src="Images/utn-sistemas-white.png" alt="Imagen Izquierda" class="footer-image-left">
@@ -72,6 +86,15 @@
     </div>
   </footer>
 
+  <script>
+    // Obtener referencia al botón
+    const irBtn = document.getElementById('ir-btn');
   
+    // Agregar evento de clic al botón
+    irBtn.addEventListener('click', function() {
+      // Redirigir al usuario a la URL especificada
+      window.location.href = 'https://cba.portico.net.ar/convocatorias/';
+    });
+  </script>
 </body>
 </html>
