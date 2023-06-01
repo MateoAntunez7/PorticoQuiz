@@ -8,7 +8,7 @@ body {
   position: relative;
   overflow: hidden;
   height: 100vh;
-  background-image: url(Images/fondo.png);
+  background-image: url(../Images/fondo.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
