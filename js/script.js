@@ -142,6 +142,17 @@ const questions = [
       }
     }
   }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const buttonSound = document.getElementById('button-sound');
+    const nextBtn = document.getElementById('next-btn');
+  
+    nextBtn.addEventListener('click', function() {
+      buttonSound.play();
+    });
+  });
+  
+
   
   function handleNextBtnClick() {
     calculateScore();
@@ -157,3 +168,4 @@ const questions = [
   nextBtn.addEventListener('click', handleNextBtnClick);
   
   showQuestion();
+
