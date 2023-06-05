@@ -1,73 +1,77 @@
 .carousel-item {
-    height: 100vh;
-  }
-  
-  .carousel-inner img {
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  body {
-    background-color: black;
-  }
+  height: 100vh;
+}
 
-  .footer {
-    position: relative;
-  }
-  
+.carousel-inner img {
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  background-color: black;
+}
+
+.footer {
+  position: relative;
+}
+
+.footer-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+
+.no-hover-cursor {
+  cursor: default;
+}
+
+.card {
+  cursor: default;
+}
+
+.footer-image-left {
+  padding-left: 2%;
+  max-width: 15%;
+  height: auto;
+}
+
+.footer-image-center {
+  max-width: 12%;
+  height: auto;
+  margin-right: 30px;
+}
+
+.footer-image-right {
+  padding-right: 2%;
+  max-width: 8%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
   .footer-container {
-    position: absolute;
-    left: 0;
-    right: 0;
-    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    background-color: black;
   }
-  
+
   .footer-image-left {
-    padding-left: 2%;
-    max-width: 15%; /* Ajusta el tamaño de la imagen izquierda según sea necesario */
-    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
   }
-  
+
   .footer-image-center {
-    max-width: 12%; /* Ajusta el tamaño de la imagen centro según sea necesario */
-    height: auto;
-    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
   }
-  
+
   .footer-image-right {
-    padding-right: 2%;
-    max-width: 8%; /* Ajusta el tamaño de la imagen derecha según sea necesario */
-    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
   }
-  
-  @media (max-width: 768px) {
-    .footer-container {
-      flex-wrap: wrap;
-      
-      justify-content: space-between;
-    }
-    
-    .footer-image-left{
-      margin-top: 10px;
-      margin-bottom: 10px;
-      margin-left: 30px;
-
-    }
-    .footer-image-center{
-      margin-top: 10px;
-      margin-bottom: 10px;
-      margin-right: 20px;
- 
-
-    }
-    .footer-image-right {
-      margin-top: 10px;
-      margin-bottom: 10px;
-      margin-left: 10px;
-    }
-  }
-  
-  
+}
