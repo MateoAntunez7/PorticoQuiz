@@ -19,8 +19,8 @@ const questions = [
       question: "¿Qué opinas del trabajo en equipo?",
       answers: [
         { text: "Mientras más gente apoyando la misma causa mejor", side: "Luz" },
-        { text: "Prefiero resolver el trabajo yo solo", side: "Oscuridad" },
-        { text: "Me siento cómodo en grupos reducidos", side: "Oscuridad" }
+        { text: "Prefiero resolver el trabajo yo solo", side: "Oscuridad" }
+        
       ]
     },
     {
@@ -52,13 +52,32 @@ const questions = [
     },
     
     {
-      question: "¿Cuál es el nombre del planeta de origen de Luke Skywalker?",
+      question: "¿Qué valoras más en una persona?",
       answers: [
-        { text: "Admiración y poder", side: "Oscuridad" },
-        { text: "Dinero y amor", side: "Luz" },
-        { text: "Paz y estabilidad", side: "Luz" }
+        { text: "Honestidad", side: "Luz" },
+        { text: "Inteligencia", side: "Oscuridad" },
+        { text: "Empatía", side: "Luz" },
+        { text: "Ambición", side: "Oscuridad" }
       ]
     },
+    {
+      question: "¿Cuál es tu enfoque principal en la toma de decisiones?",
+      answers: [
+        { text: "La razón y el análisis lógico", side: "Oscuridad" },
+        { text: "La intuición y el instinto", side: "Luz" },
+        { text: "La consulta con otras personas", side: "Luz" }
+      ]
+    },
+    {
+      question: "¿Qué te motiva más en la vida?",
+      answers: [
+        { text: "El éxito y el reconocimiento", side: "Oscuridad" },
+        { text: "La felicidad y el bienestar personal", side: "Luz" },
+        { text: "La búsqueda de conocimiento y sabiduría", side: "Luz" },
+        { text: "El poder y la influencia", side: "Oscuridad" }
+      ]
+    },
+    
     
     {
       question: "¿Dónde tendrías la casa de tus sueños?",
